@@ -1,0 +1,4 @@
+/dist/
+/xeno/
+/node_modules/
+*.log
