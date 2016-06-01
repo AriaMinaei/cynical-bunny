@@ -11,7 +11,8 @@ function makeConfig() {
       path: './dist',
       filename: '[name].js',
       publicPath: '/dist/',
-      libraryTarget: 'commonjs2'
+      libraryTarget: 'umd',
+      library: 'theTestingFramework'
     },
     externals: [
       // all none-relative paths are external

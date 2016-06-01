@@ -3,7 +3,7 @@ import descriptorToExecutableTree from '../src/descriptorToExecutableTree';
 import * as api from '../src/bddApi';
 
 describe('countTests()', () => {
-    it.only('should work', () => {
+    it('should work', () => {
         const tree = (function(){
             const {stopAndReturnDescriptor} = api.capture();
             api.describe('A', () => {
