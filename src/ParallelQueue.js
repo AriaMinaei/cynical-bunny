@@ -1,6 +1,6 @@
 import wn from 'when';
 
-function noop() {};
+function noop() {}
 
 export default class PrallelQueue {
     constructor(maxConcurrentTasks = 10) {

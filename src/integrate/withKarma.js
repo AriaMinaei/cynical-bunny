@@ -16,25 +16,25 @@ export default function integrateWithKarma(cb) {
         const {tree} = stop();
         const log = (type, detes) => {
             switch (type) {
-                case `success`:
-                case `skip`:
-                    this.result({
-                        ...detesToResult(detes),
-                        success: true,
-                        skipped: type !== 'success',
-                        log: []
-                    });
-                    break;
-                case `fail`:
-                    this.result({
-                        ...detesToResult(detes),
-                        success: false,
-                        skipped: false,
-                        log: [detes.error].map(formatError)
-                    });
-                    break;
-                default:
-                    console.error('Invalid log call', type, detes);
+            case `success`:
+            case `skip`:
+                this.result({
+                    ...detesToResult(detes),
+                    success: true,
+                    skipped: type !== 'success',
+                    log: []
+                });
+                break;
+            case `fail`:
+                this.result({
+                    ...detesToResult(detes),
+                    success: false,
+                    skipped: false,
+                    log: [detes.error].map(formatError)
+                });
+                break;
+            default:
+                console.error('Invalid log call', type, detes);
             }
         }
 

@@ -1,6 +1,6 @@
 import wn from 'when';
 
-function noop() {};
+function noop() {}
 
 export default class SequentialQueue {
     constructor() {

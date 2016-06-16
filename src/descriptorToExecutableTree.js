@@ -1,5 +1,4 @@
 import mapValues from 'lodash/mapValues';
-import property from 'lodash/property';
 
 const emptyContext = {
     isSkipped: false, isExclusive: false, defaultTimeoutDuration: null,
@@ -50,7 +49,7 @@ function suiteToExecTree(descriptor, context) {
         afterAllHooks: descriptor.afterAllHooks.map((fn, i) => ({
             address: [...newContext.address, `afterAllHook#${i}`],
             fn
-        })),
+        }))
     };
 }
 

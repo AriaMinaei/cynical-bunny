@@ -1,4 +1,3 @@
-import traverseExecutableTree from './traverseExecutableTree';
 import determineExclusivenessOfExecutableTree from './determineExclusivenessOfExecutableTree';
 import SequentialQueue from './SequentialQueue';
 import ParallelQueue from './ParallelQueue';
@@ -6,7 +5,6 @@ import runSpecFunction from './runSpecFunction';
 import wn from 'when';
 import sequenceTasks from 'when/sequence';
 import map from 'lodash/map';
-import curry from 'lodash/curry';
 
 export default function runExecutableTree(tree, log) {
     const rootHasExclusiveTests = determineExclusivenessOfExecutableTree(tree);
