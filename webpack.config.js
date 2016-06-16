@@ -1,5 +1,5 @@
-WebpackErrorNotificationPlugin = require('webpack-error-notification');
-webpack = require('webpack');
+var WebpackErrorNotificationPlugin = require('webpack-error-notification');
+var webpack = require('webpack');
 
 function makeConfig() {
   return {

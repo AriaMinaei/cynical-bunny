@@ -1,21 +1,23 @@
 {
-  "name": "the-testing-framework",
-  "private": "true",
+  "name": "cynical-bunny",
   "version": "0.1.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha \"test/**/*.js\"",
+    "test": "run-s lint test:run",
+    "test:run": "mocha \"test/**/*.js\"",
     "test:watch": "mocha \"test/**/*.js\" --watch",
+    "lint": "eslint",
     "test:debug": "devtool ./node_modules/mocha/bin/_mocha -c -- \"test/**/*.js\" --watch",
     "dev": "webpack --watch --colors --progress",
     "prepublish": "webpack --colors --progress"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.9.0",
+    "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-stage-2": "^6.5.0",
@@ -25,13 +27,14 @@
     "chai-deep-match": "^1.0.2",
     "chai-fuzzy": "^1.6.1",
     "devtool": "^1.11.2",
+    "eslint": "^2.12.0",
     "json-loader": "^0.5.4",
     "mocha": "^2.4.5",
+    "npm-run-all": "^2.1.2",
     "webpack": "^1.13.1",
     "webpack-error-notification": "^0.1.6"
   },
   "dependencies": {
-    "asap": "^2.0.4",
     "lodash": "^4.13.0",
     "when": "^3.7.7"
   }
