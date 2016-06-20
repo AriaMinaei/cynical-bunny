@@ -1,7 +1,7 @@
 {
-  "name": "cynical-bunny",
-  "version": "0.1.0",
-  "description": "",
+  "name": "@kiosked/cynical-bunny",
+  "version": "0.1.1",
+  "description": "A testing framework. No bells/whistles",
   "main": "dist/index.js",
   "scripts": {
     "test": "run-s lint test:run",
@@ -13,7 +13,8 @@
     "prepublish": "webpack --colors --progress"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aria Minaei <aria.minaei@gmail.com>",
+  "repository": {"type": "git", "url": "https://github.com/Kiosked/cynical-bunny"},
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.9.0",

@@ -1,4 +1,5 @@
 /xeno/
 /src/
+/test/
 /node_modules/
 *.log
