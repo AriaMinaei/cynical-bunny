@@ -1,6 +1,6 @@
 {
   "name": "@kiosked/cynical-bunny",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A testing framework. No bells/whistles",
   "main": "dist/index.js",
   "scripts": {
